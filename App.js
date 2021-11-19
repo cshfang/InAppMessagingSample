@@ -80,7 +80,7 @@ const Widget = ({ title, buttonText, count, onButtonPress }) => {
       <View style={styles.counterView}>
         <Text style={styles.text}>Displayed</Text>
         <Text style={[styles.text, styles.counterText]}>{count}</Text>
-        <Text style={styles.text}>times</Text>
+        <Text style={styles.text}>{`time${count === 1 ? '' : 's'}`}</Text>
       </View>
     </View>
   );
